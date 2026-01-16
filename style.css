@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+body > div > div > div > div:first-child {
+    color: hsl(0, 0%, 100%);
+}
+
+body > div > div > div > div:last-child{
+    color: hsla(0, 0%, 100%, 0.6)
+}

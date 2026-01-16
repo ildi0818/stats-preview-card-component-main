@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil kártya</title>
+
+    <style>
+        .card {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid violet;
+            box-shadow: 10px 10px 25px blueviolet;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */    /*3 oszlop*/
+            /*grid-template-columns: 1fr 1fr;*/     /*2 oszlop*/
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* gap: 15px; */
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr; /*max 600px-ig 1 oszlop*/
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <div class="card">
+            <img src="https://miskolcifoto.hu/wp-content/uploads/2021/07/Noi-portre-fotozas-az-Erzsebet-Teren-scaled.jpg" alt="női fotó">
+            <h2>Horváth Andrea</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni in sit quidem deleniti culpa, ab at, placeat fugit temporibus provident facilis porro voluptas? Ducimus aperiam esse velit ipsa! Temporibus, ex?</p>
+            <button>Message</button>
+        </div>
+        <div class="card">
+            <img src="https://miskolcifoto.hu/wp-content/uploads/2021/07/Noi-portre-fotozas-az-Erzsebet-Teren-scaled.jpg" alt="női fotó">
+            <h2>Horváth Andrea</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni in sit quidem deleniti culpa, ab at, placeat fugit temporibus provident facilis porro voluptas? Ducimus aperiam esse velit ipsa! Temporibus, ex?</p>
+            <button>Message</button>
+        </div>
+        <div class="card">
+            <img src="https://miskolcifoto.hu/wp-content/uploads/2021/07/Noi-portre-fotozas-az-Erzsebet-Teren-scaled.jpg" alt="női fotó">
+            <h2>Horváth Andrea</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni in sit quidem deleniti culpa, ab at, placeat fugit temporibus provident facilis porro voluptas? Ducimus aperiam esse velit ipsa! Temporibus, ex?</p>
+            <button>Message</button>
+        </div>
+    </section>
+</body>
+</html>
