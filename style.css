@@ -8,8 +8,47 @@ body {
     background-color: hsl(233, 47%, 7%);
 }
 
+body > div {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+body > div > div:first-child {
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+
+body > div > div:first-child::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(277, 73%, 43%);
+    opacity: 0.5;
+    border-radius: 10px 10px 0 0;
+}
+
+body > div > div:last-child {
+    padding: 1.5rem 1.2rem;
+    background-color: hsl(244, 37%, 16%);
+    font-family: "Inter", sans-serif;
+    line-height: 1.3rem;
+    border-radius: 0 0 10px 10px;
+}
+
 h1 {
+    font-size: 1.3rem;
     color: hsl(0, 0%, 100%);
+    /* margin-block: 20px 30px; */
+    line-height: 1.6rem;
 }
 
 span {
@@ -17,13 +56,25 @@ span {
 }
 
 p {
+    font-size: 0.6rem;
     color: hsla(0, 0%, 100%, 0.75);
+    margin-block: 18px 29px;
+    
 }
 
 body > div > div > div > div:first-child {
+    font-weight: bold;
     color: hsl(0, 0%, 100%);
 }
 
 body > div > div > div > div:last-child{
-    color: hsla(0, 0%, 100%, 0.6)
+    
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+body > div > div > div:nth-of-type(2) {
+    margin: 20px 0;
 }
