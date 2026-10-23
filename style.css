@@ -38,7 +38,7 @@ body > div > div:first-child::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: hsl(277, 73%, 43%);
+    background-color: hsl(277, 73%, 37%);
     opacity: 0.5;
     border-radius: 10px 10px 0 0;
 }
